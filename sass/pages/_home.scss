@@ -1,0 +1,101 @@
+.section-about {
+	background-color: $color-grey-light-1;
+	padding: 18rem 0;
+	margin-top: -20vh;
+
+	@include responsive(tab-port) {
+		padding: 12.5rem 0;
+	}
+}
+.section-features {
+	padding: 12.5rem 0;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary-light, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url('../images/nat-4.jpg');
+	background-size: cover;
+	background-position: top;
+	/* clip-path: polygon(100% 0, 0 30%, 0 100%, 100% 70%); */
+	margin-top: -7rem;
+
+	transform: skewY(-7deg);
+	& > * {
+		transform: skewY(7deg);
+	}
+	@include responsive(tab-port) {
+		padding: 6.25rem 0;
+	}
+}
+.section-tours {
+	background-color: $color-grey-light-1;
+	padding: 15.625rem 0 9.5rem 0;
+	margin-top: -7rem;
+
+	@include responsive(tab-port) {
+		padding: 12.5rem 0 6.25rem 0;
+	}
+}
+.section-stories {
+	padding: 10rem 0;
+	position: relative;
+
+	@include responsive(tab-port) {
+		padding: 6.25rem 0;
+	}
+}
+.section-booking {
+	background-image: linear-gradient(
+		to right bottom,
+		$color-primary-light,
+		$color-primary-dark
+	);
+	padding: 10rem 0;
+
+	@include responsive(tab-port) {
+		padding: 6.25rem 0;
+	}
+}
+.booking {
+	background-image: linear-gradient(
+			105deg,
+			rgba($white, 0.9) 0%,
+			rgba($white, 0.9) 50%,
+			transparent 50%
+		),
+		url(../images/nat-10.jpg);
+	background-size: 100%;
+	border-radius: 1.25rem;
+	box-shadow: 0 1rem 2.5rem rgba($black, 0.4);
+
+	@include responsive(tab-land) {
+		background-image: linear-gradient(
+				105deg,
+				rgba($white, 0.9) 0%,
+				rgba($white, 0.9) 65%,
+				transparent 65%
+			),
+			url(../images/nat-10.jpg);
+		background-size: cover;
+	}
+
+	@include responsive(tab-port) {
+		background-image: linear-gradient(
+				105deg,
+				rgba($white, 0.9) 0%,
+				rgba($white, 0.9) 100%
+			),
+			url(../images/nat-10.jpg);
+	}
+	&__form {
+		width: 50%;
+		padding: 3.75rem;
+		@include responsive(tab-land) {
+			width: 65%;
+		}
+		@include responsive(tab-port) {
+			width: 100%;
+		}
+	}
+}

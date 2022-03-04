@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merriweather&family=Montserrat&family=Pacifico&family=Poppins&family=Roboto&family=Satisfy&family=Lato:100,300,400,700,900&family=Ubuntu&display=swap');
+$grid-width: 71.25rem;
+$gutter-vertical: 5rem;
+$gutter-vertical-small: 3.75rem;
+$gutter-horizontal: 4rem;
+
+// ! COLORS
+$black: #000000;
+$white: #ffffff;
+$red: #e74c3c;
+$orange: #f39c12;
+$yellow: #f1c40f;
+$green: #2ecc71;
+$teal: #1abc9c;
+$blue: #3498db;
+$blue-dark: #2980b9;
+$purple: #9b59b6;
+$pink: #e91e63;
+$gray: #7f8c8d;
+
+$color-primary-light: #7ed56f;
+$color-primary: #55c57a;
+$color-primary-dark: #28b485;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+
+$color-tertiary-light: #2998ff;
+$color-tertiary-dark: #5643fa;
+
+$gray-text-color: #777777;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eeeeee;
+
+$color-grey-dark-2: #999999;
+$color-grey-dark-3: #333333;
+
+$box-shadow-values: 0 1rem 2.5rem;
+$box-shadow-1: $box-shadow-values rgba($black, 0.15);
+$box-shadow-2: $box-shadow-values rgba($black, 0.40);
+
+$image-shadow-hover: 0 1.5rem 2.5rem rgba($black, 0.5);
+$button-shadow-hover: 0 0.625rem 1.25rem rgba($black, 0.2);
+$button-shadow-active: 0 0.3125rem 0.625rem rgba($black, 0.2);
+// ! FONT FAMILY
+$cookie-font-family: 'Cookie', cursive;
+$lato-font-family: 'Lato', sans-serif;
+$merriweather-font-family: 'Merriweather', serif;
+$montserrat-font-family: 'Montserrat', sans-serif;
+$pacifico-font-family: 'Pacifico', cursive;
+$poppins-font-family: 'Poppins', sans-serif;
+$roboto-font-family: 'Roboto', sans-serif;
+$satisfy-font-family: 'Satisfy', cursive;
+$ubuntu-font-family: 'Ubuntu', sans-serif;
+
+// ! SCREEN BREAKPOINTS
+$portrait-mobile-screen-breakpoint: 575.98px;
+$landscape-mobile-screen-breakpoint: 767.98px;
+$tablet-screen-breakpoint: 991.98px;
+$desktop-screen-breakpoint: 1199.98px;
+$large-desktop-screen-breakpoint: 1399.98px;

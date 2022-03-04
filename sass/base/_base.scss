@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 100%; // 1rem = 16px
+
+	@include responsive(big-desktop) {
+		font-size: 110%;
+	}
+	@include responsive(tab-land) {
+		font-size: 80%;
+	}
+	@include responsive(tab-port) {
+		font-size: 70%;
+	}
+	@include responsive(phone) {
+		font-size: 66%;
+	}
+}
+body {
+	padding: 2.5rem;
+	box-sizing: border-box;
+	@include responsive(tab-port) {
+		padding: 0;
+	}
+}

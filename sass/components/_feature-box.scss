@@ -1,0 +1,37 @@
+.feature-box {
+	background-color: rgba($white, 0.8);
+	font-size: 1rem;
+	padding: 1.5rem;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: $box-shadow-1;
+	transition: transform 0.3s;
+
+	@include responsive(tab-port) {
+		padding: 1.2rem;
+	}
+
+	&__icon {
+		/* padding-bottom: 1rem; */
+		font-size: 5rem;
+		margin-bottom: 1.5rem;
+		display: inline-block;
+		background-image: linear-gradient(
+			to right,
+			$color-primary-light,
+			$color-primary-dark
+		);
+		-webkit-background-clip: text;
+		color: transparent;
+
+		@include responsive(tab-port) {
+			margin-bottom: 0;
+		}
+	}
+	&:hover {
+		transform: translateY(-1rem) scale(1.03);
+		cursor: pointer;
+	}
+	/* &__text {
+	} */
+}
