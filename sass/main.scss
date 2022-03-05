@@ -1,24 +1,29 @@
-@import "global/functions";
-@import "global/variables";
-@import "global/mixins";
+//@forward "global/functions";
+//@forward "global/variables";
+//@forward "global/mixins";
 
-@import "base/animations";
-@import "base/typography";
-@import "base/utilities";
-@import "base/base";
+/* @forward "base/animations";
+@forward "base/typography";
+@forward "base/utilities";
+@forward "base/base"; */
+//@forward './global/index';
+@forward './components';
+@forward './layout';
+@forward './pages';
+@forward './base/index';
 
-@import "components/button";
-@import "components/composition";
-@import "components/feature-box";
-@import "components/card";
-@import "components/story";
-@import "components/background-video";
-@import "components/form";
-@import "components/popup";
+/* @forward "components/button";
+@forward "components/composition";
+@forward "components/feature-box";
+@forward "components/card";
+@forward "components/story";
+@forward "components/background-video";
+@forward "components/form";
+@forward "components/popup";
 
-@import "layout/grid";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/navigation";
+@forward "layout/grid";
+@forward "layout/header";
+@forward "layout/footer";
+@forward "layout/navigation";
 
-@import "pages/home";
+@forward "pages/home"; */

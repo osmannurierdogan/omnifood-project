@@ -8,7 +8,7 @@
 html {
 	font-size: 100%; // 1rem = 16px
 
-	@include responsive(big-desktop) {
+	/* @include responsive(big-desktop) {
 		font-size: 110%;
 	}
 	@include responsive(tab-land) {
@@ -19,7 +19,7 @@ html {
 	}
 	@include responsive(phone) {
 		font-size: 66%;
-	}
+	} */
 }
 body {
 	padding: 2.5rem;

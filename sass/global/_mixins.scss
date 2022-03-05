@@ -1,19 +1,3 @@
-@mixin clearfix {
-	&::after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-}
-@mixin absoluteCenter {
-	& {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
 // * MEDIA QUERY MANAGER
 /*
 0 - 600px: 				Phone
@@ -31,7 +15,7 @@ $breakpoint argument choices:
 
 ORDER : Base + Typography > General Layout + grid > page layout > components
 */
-@mixin responsive($breakpoint) {
+/* @mixin responsive($breakpoint) {
 	@if $breakpoint == phone {
 		@media (max-width: 37.5em) {
 			// 600px
@@ -62,4 +46,4 @@ ORDER : Base + Typography > General Layout + grid > page layout > components
 			@content;
 		}
 	}
-}
+} */

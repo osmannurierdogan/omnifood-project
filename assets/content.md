@@ -130,14 +130,12 @@ Privacy & terms
 
 ## Sections
 
-- Navigation
+- Logo + Navigation
 - Hero
 - Featured In
-- Features
 - How it works
 - Meals (and list of Diets)
-- Gallery
-- Testimonials
-- Pricing
+- Testimonials + Gallery
+- Pricing + features
 - CTA
 - Footer
