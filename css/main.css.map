@@ -1,8 +1,28 @@
 {
     "version": 3,
-    "mappings": "AAIA;;;wBAGwB;AAExB,QAAQ,CAAR,cAAQ;AACR,QAAQ,CAAR,UAAQ;AACR,QAAQ,CAAR,SAAQ;AACR,QAAQ,CAAR,cAAQ;AAER;;;;;;;;;;;;;;yBAcyB",
+    "mappings": "AEAA,OAAO,CAAC,mNAAI;ACCZ;;;;;;;;;;;;;;;EAeE;AEhBF,AAAA,EAAE,CAAA;EACA,SAAS,EAAE,IAAI;CAChB;;AEFD,AAAA,CAAC;AACD,CAAC,AAAA,OAAO;AACR,CAAC,AAAA,QAAQ,CAAC;EACT,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACV;;AACD,AAAA,IAAI,CAAC;EACJ,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,UAAU;CACtB;;AACD,AAAA,IAAI,CAAC;EACJ,OAAO,EAAE,MAAM;CAEf;;APLD;;;0BAG0B;AAkB1B;;;;0BAI0B",
     "sources": [
-        "../sass/main.scss"
+        "../sass/main.scss",
+        "../sass/global/_functions.scss",
+        "../sass/global/_variables.scss",
+        "../sass/global/_mixins.scss",
+        "../sass/base/_animations.scss",
+        "../sass/base/_typography.scss",
+        "../sass/base/_utilities.scss",
+        "../sass/base/_base.scss",
+        "../sass/components/_button.scss",
+        "../sass/components/_composition.scss",
+        "../sass/components/_feature-box.scss",
+        "../sass/components/_card.scss",
+        "../sass/components/_story.scss",
+        "../sass/components/_background-video.scss",
+        "../sass/components/_form.scss",
+        "../sass/components/_popup.scss",
+        "../sass/layout/_grid.scss",
+        "../sass/layout/_header.scss",
+        "../sass/layout/_footer.scss",
+        "../sass/layout/_navigation.scss",
+        "../sass/pages/_home.scss"
     ],
     "names": [],
     "file": "main.css"

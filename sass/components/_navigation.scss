@@ -1,0 +1,45 @@
+.nav {
+	&-main {
+		&__list {
+			list-style: none;
+			display: flex;
+			gap: 3.2rem;
+			font-size: 1.8rem;
+			font-weight: 500;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__link {
+			&:link,
+			&:visited {
+				text-decoration: none;
+        display: inline-block;
+				color: $color-gray-2;
+				transition: all 0.3s;
+			}
+			&:hover,
+			&:active {
+				color: $color-primary-dark-9;
+			}
+		}
+		&__cta {
+			&:visited,
+			&:link {
+				background-color: $color-primary;
+				color: $color-primary-light-9;
+				border-radius: 1rem;
+				padding: 1.2rem 2.4rem;
+			}
+			&:hover,
+			&:active {
+				background-color: $color-primary-dark-9;
+			}
+		}
+	}
+	&-footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 2.4rem;
+	}
+}

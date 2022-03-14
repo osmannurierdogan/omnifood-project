@@ -1,29 +1,27 @@
-//@forward "global/functions";
-//@forward "global/variables";
-//@forward "global/mixins";
+@import 'base/reset';
 
-/* @forward "base/animations";
-@forward "base/typography";
-@forward "base/utilities";
-@forward "base/base"; */
-//@forward './global/index';
-@forward './components';
-@forward './layout';
-@forward './pages';
-@forward './base/index';
+@import 'global/functions';
+@import 'global/variables';
+@import 'global/mixins';
 
-/* @forward "components/button";
-@forward "components/composition";
-@forward "components/feature-box";
-@forward "components/card";
-@forward "components/story";
-@forward "components/background-video";
-@forward "components/form";
-@forward "components/popup";
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-@forward "layout/grid";
-@forward "layout/header";
-@forward "layout/footer";
-@forward "layout/navigation";
+@import 'components/button';
+@import 'components/card';
+@import 'components/navigation';
+@import 'components/list';
+@import 'components/feature';
 
-@forward "pages/home"; */
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/how-it-works';
+@import 'layout/featured-in';
+@import 'layout/meals';
+@import 'layout/testimonials';
+@import 'layout/pricing';
+@import 'layout/cta';
+@import 'layout/footer';
+
+@import 'pages/home';

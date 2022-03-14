@@ -1,0 +1,51 @@
+.heading {
+	&-sub {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: $color-primary-dark-9;
+		text-transform: uppercase;
+		margin-bottom: 1.6rem;
+		letter-spacing: 0.75px;
+		/* &--gray{
+			color: $color-gray-4;
+			text-align: center;
+			margin-bottom: 2.4rem;
+		} */
+	}
+	&-featured-in {
+		font-size: 1.4rem;
+		text-transform: uppercase;
+		letter-spacing: 0.75px;
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 2.4rem;
+		color: $color-gray-4;
+	}
+	&-primary,
+	&-secondary,
+	&-tertiary {
+		font-weight: 700;
+		letter-spacing: -0.5px;
+		color: $color-gray-2;
+	}
+	&-primary {
+		font-size: 5.2rem;
+		line-height: 1.1;
+		margin-bottom: 3.2rem;
+	}
+	&-secondary {
+		font-size: 4.4rem;
+		margin-bottom: 9.6rem;
+	}
+	&-tertiary {
+		font-size: 3rem;
+		line-height: 1.2;
+		margin-bottom: 3.2rem;
+	}
+	&-footer{
+		font-size: 1.8rem;
+		font-weight: 500;
+		margin-bottom: 4rem;
+	}
+}

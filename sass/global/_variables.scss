@@ -1,61 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Merriweather&family=Montserrat&family=Pacifico&family=Poppins&family=Roboto&family=Satisfy&family=Lato:100,300,400,700,900&family=Ubuntu&display=swap');
-$grid-width: 71.25rem;
-$gutter-vertical: 5rem;
-$gutter-vertical-small: 3.75rem;
-$gutter-horizontal: 4rem;
+/*
 
-// ! COLORS
-$black: #000000;
-$white: #ffffff;
-$red: #e74c3c;
-$orange: #f39c12;
-$yellow: #f1c40f;
-$green: #2ecc71;
-$teal: #1abc9c;
-$blue: #3498db;
-$blue-dark: #2980b9;
-$purple: #9b59b6;
-$pink: #e91e63;
-$gray: #7f8c8d;
+!  01 TYPOGRAPHY SYSTEM
 
-$color-primary-light: #7ed56f;
-$color-primary: #55c57a;
-$color-primary-dark: #28b485;
+* Font size system (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
 
-$color-secondary-light: #ffb900;
-$color-secondary-dark: #ff7730;
+* Font Weights:
+Default: 400
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
+* Line heights:
+Default: 1
 
-$gray-text-color: #777777;
-$color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eeeeee;
+! 02 COLORS
 
-$color-grey-dark-2: #999999;
-$color-grey-dark-3: #333333;
+* Primary: 
+- #e67e22
+* Tints:
+-  
+* Shades: 
+- 
+* Accents: 
+- 
+* Grays: 
+- #555555
+- #333333
 
-$box-shadow-values: 0 1rem 2.5rem;
-$box-shadow-1: $box-shadow-values rgba($black, 0.15);
-$box-shadow-2: $box-shadow-values rgba($black, 0.40);
+! 05 SHADOWS
 
-$image-shadow-hover: 0 1.5rem 2.5rem rgba($black, 0.5);
-$button-shadow-hover: 0 0.625rem 1.25rem rgba($black, 0.2);
-$button-shadow-active: 0 0.3125rem 0.625rem rgba($black, 0.2);
-// ! FONT FAMILY
-$cookie-font-family: 'Cookie', cursive;
-$lato-font-family: 'Lato', sans-serif;
-$merriweather-font-family: 'Merriweather', serif;
-$montserrat-font-family: 'Montserrat', sans-serif;
-$pacifico-font-family: 'Pacifico', cursive;
-$poppins-font-family: 'Poppins', sans-serif;
-$roboto-font-family: 'Roboto', sans-serif;
-$satisfy-font-family: 'Satisfy', cursive;
-$ubuntu-font-family: 'Ubuntu', sans-serif;
+! 06 BORDER-RADIUS
 
-// ! SCREEN BREAKPOINTS
-$portrait-mobile-screen-breakpoint: 575.98px;
-$landscape-mobile-screen-breakpoint: 767.98px;
-$tablet-screen-breakpoint: 991.98px;
-$desktop-screen-breakpoint: 1199.98px;
-$large-desktop-screen-breakpoint: 1399.98px;
+! 07 WHITESPACE
+* Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+$calligraffitti-font-family: "Calligraffitti", cursive;
+$inter-font-family: "Inter", sans-serif;
+$rubik-font-family: "Rubik", sans-serif;
+$montserrat-font-family: "Montserrat", sans-serif;
+
+$color-gray-1: #555555;
+$color-gray-2: #333333;
+$color-gray-3: #dddddd;
+$color-gray-4: #888888;
+$color-gray-5: #6f6f6f;
+$color-gray-6: #767676;
+$color-gray-7: #eeeeee;
+
+$color-accent-vegetarian: #51cf66;
+$color-accent-vegan: #94d82d;
+$color-accent-paleo: #ffd43b;
+$color-white: #ffffff;
+// ! TINTS
+
+$color-primary-dark-1: #170d03;
+$color-primary-dark-2: #2e1907;
+$color-primary-dark-3: #45260a;
+$color-primary-dark-4: #5c320e;
+$color-primary-dark-5: #733f11;
+$color-primary-dark-6: #8a4c14;
+$color-primary-dark-7: #a15818;
+$color-primary-dark-8: #b8651b;
+$color-primary-dark-9: #cf711f;
+$color-primary: #e67e22;
+$color-primary-light-1: #e98b38;
+$color-primary-light-2: #eb984e;
+$color-primary-light-3: #eea564;
+$color-primary-light-4: #f0b27a;
+$color-primary-light-5: #f3bf91;
+$color-primary-light-6: #f5cba7;
+$color-primary-light-7: #f8d8bd;
+$color-primary-light-8: #fae5d3;
+$color-primary-light-9: #fdf2e9;
+
+
+// ! SHADES

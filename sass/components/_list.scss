@@ -1,0 +1,19 @@
+.list {
+	display: flex;
+	gap: 1.6rem;
+	flex-direction: column;
+	&-item {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		font-size: 1.8rem;
+		& strong{
+			font-weight: 500;
+		}
+		&-icon {
+			width: 3rem;
+			height: 3rem;
+			color: $color-primary;
+		}
+	}
+}

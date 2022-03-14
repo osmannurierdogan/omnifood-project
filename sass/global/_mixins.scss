@@ -15,7 +15,7 @@ $breakpoint argument choices:
 
 ORDER : Base + Typography > General Layout + grid > page layout > components
 */
-/* @mixin responsive($breakpoint) {
+@mixin responsive($breakpoint) {
 	@if $breakpoint == phone {
 		@media (max-width: 37.5em) {
 			// 600px
@@ -46,4 +46,4 @@ ORDER : Base + Typography > General Layout + grid > page layout > components
 			@content;
 		}
 	}
-} */
+}

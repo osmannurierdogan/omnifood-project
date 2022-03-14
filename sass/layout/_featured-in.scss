@@ -1,0 +1,13 @@
+/* .section-featured-in {
+	text-align: center;
+} */
+.logos {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	& img {
+		height: 3.2rem;
+    filter: brightness(0);
+    opacity: 50%;    
+	}
+}
