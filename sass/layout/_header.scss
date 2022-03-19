@@ -1,10 +1,22 @@
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 4.8rem;
-  height: 9.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	padding: 0 4.8rem;
+	height: 9.6rem;
 	&__logo {
 		height: 2.2rem;
 	}
+	@include responsive(tab-land) {
+		padding: 0 3.2rem;
+	}
+	/* & .sticky {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		width: 100%;
+		background-color: $color-white;
+		z-index: 9999;
+	} */
 }

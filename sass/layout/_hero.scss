@@ -1,47 +1,92 @@
 .hero {
 	&-container {
 		max-width: 130rem;
-		/* display: grid;
+		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-    gap: 9.6rem; */
+		gap: 9.6rem;
 		margin: 0 auto;
-    padding: 0 3.2rem;
-    align-items: center;
+		padding: 0 3.2rem;
+		align-items: center;
+		@include responsive(small-desktop) {
+			max-width: 120rem;
+		}
+		@include responsive(tab-land) {
+			gap: 4.8rem;
+		}
+		@include responsive(tab-port) {
+			grid-template-columns: 1fr;
+			padding: 0 8rem;
+			gap: 6.4rem;
+		}
+		@include responsive(phone) {
+			padding: 0 5rem;
+		}
 	}
 	&-image {
 		width: 100%;
+		@include responsive(tab-port) {
+			width: 60%;
+		}
+		@include responsive(phone) {
+			width: 90%;
+		}
 	}
-  &-description{
-    font-size: 2rem;
-    line-height: 1.6;
-    margin-bottom: 4.8rem;
-  }
+	&-description {
+		font-size: 2rem;
+		line-height: 1.6;
+		margin-bottom: 4.8rem;
+	}
+	&-buttons{
+		display: flex;
+		gap: 1.2rem;
+		@include responsive(phone-small) {
+			flex-direction: column;
+		}
+	}
+	&-text-box,
+	&-image-box {
+		@include responsive(tab-port) {
+			text-align: center;
+		}
+	}
+
 }
 
-.meals-delivered{
-  display: flex;
-  align-items: center;
-  margin-top: 8rem;
-  gap: 1.6rem;
-  //justify-content: space-between;
-  &__images{
-    display: flex;
-    
-    & img{
-      width: 4.8rem;
-      height: 4.8rem;
-      border-radius: 50%;
-      border: 3px solid $color-primary-light-9;
-      &:not(:first-child){
-        margin-left: -1.6rem;
-      }
-    }
-  }
-  &__text{
-    font-size: 1.8rem;
-    font-weight: 600;
-    & span {
-      color: $color-primary-dark-9;
-    }
-  }
+.meals-delivered {
+	display: flex;
+	align-items: center;
+	margin-top: 8rem;
+	gap: 1.6rem;
+	//justify-content: space-between;
+	@include responsive(tab-port) {
+		justify-content: center;
+		margin-top: 3.2rem;
+	}
+	@include responsive(phone) {
+		margin-top: 4.8rem;
+	}
+	@include responsive(phone-small) {
+		flex-direction: column;
+	}
+	&__images {
+		display: flex;
+
+		& img {
+			width: 4.8rem;
+			height: 4.8rem;
+			border-radius: 50%;
+			border: 3px solid $color-primary-light-9;
+			&:not(:first-child) {
+				margin-left: -1.6rem;
+			}
+		}
+	}
+	&__text {
+		font-size: 1.8rem;
+		font-weight: 600;
+		line-height: 1.2;
+		& span {
+			color: $color-primary-dark-9;
+		}
+	}
 }

@@ -7,7 +7,16 @@
 	justify-content: space-around;
 	& img {
 		height: 3.2rem;
-    filter: brightness(0);
-    opacity: 50%;    
+		filter: brightness(0);
+		opacity: 50%;
+		@include responsive(tab-port) {
+			height: 2.4rem;
+		}
+	}
+	@include responsive(phone) {
+		//flex-direction: column;
+		//justify-content: space-between;
+		gap: 3.2rem;
+		flex-wrap: wrap;
 	}
 }

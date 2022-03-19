@@ -8,23 +8,38 @@
 
 
 $breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
+* - phone-small == 432px = 27em 
+* - phone == 544px = 34em
+* - tab-small == 704px = 44em
+* - tab-port == 940px = 59em
+* - tab-land == 1200px = 75em
+* - small-desktop == 1360px = 85em
+* - big-desktop == 1360px <
 
 ORDER : Base + Typography > General Layout + grid > page layout > components
 */
 @mixin responsive($breakpoint) {
+	@if $breakpoint == phone-small {
+		@media (max-width: 27em) {
+			// 512px
+			@content;
+		}
+	}
 	@if $breakpoint == phone {
-		@media (max-width: 37.5em) {
-			// 600px
+		@media (max-width: 34em) {
+			// 512px
+			@content;
+		}
+	}
+	@if $breakpoint == tab-small {
+		@media (max-width: 44em) {
+			// 704px
 			@content;
 		}
 	}
 	@if $breakpoint == tab-port {
-		@media (max-width: 56.25em) {
-			// 900px
+		@media (max-width: 59em) {
+			// 940px
 			@content;
 		}
 	}
@@ -34,9 +49,9 @@ ORDER : Base + Typography > General Layout + grid > page layout > components
 			@content;
 		}
 	}
-	@if $breakpoint == desktop {
-		@media (max-width: 100em) {
-			// 1600px
+	@if $breakpoint == small-desktop {
+		@media (max-width: 85em) {
+			// 1360px
 			@content;
 		}
 	}

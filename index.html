@@ -4,7 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Omnifood</title>
+		<meta
+			name="description"
+			content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your personal tastes and nutritional needs."
+		/>
+
+		<title>Omnifood &mdash; Never cook again!</title>
 
 		<!-- ! Google Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,31 +34,55 @@
 
 		<!-- ! CSS Styles -->
 		<link rel="stylesheet" href="css/main.css" />
+
+		<!-- ! JS Scripts -->
+		<script
+			defer
+			src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+		></script>
+		<script defer src="./js/script.js"></script>
+		<script defer src="./js/smooth-scroll.js"></script>
 	</head>
-	<body>
+	<body class="sticky">
 		<header class="header">
-			<img
-				src="./images/omnifood-logo.png"
-				class="header__logo"
-				alt="Omnifood Logo"
-			/>
+			<a href="#" class="">
+				<img
+					loading="lazy"
+					src="./images/omnifood-logo.png"
+					class="header__logo"
+					alt="Omnifood Logo"
+				/>
+			</a>
 			<nav class="nav-main">
 				<ul class="nav-main__list">
-					<li><a class="nav-main__link" href="#">How it works</a></li>
-					<li><a class="nav-main__link" href="#">Meals</a></li>
-					<li><a class="nav-main__link" href="#">Testimonials</a></li>
-					<li><a class="nav-main__link" href="#">Pricing</a></li>
+					<li><a class="nav-main__link" href="#how">How it works</a></li>
+					<li><a class="nav-main__link" href="#meals">Meals</a></li>
 					<li>
-						<a class="nav-main__link nav-main__cta" href="#">Try for free</a>
+						<a class="nav-main__link" href="#testimonials">Testimonials</a>
+					</li>
+					<li><a class="nav-main__link" href="#price">Pricing</a></li>
+					<li>
+						<a class="nav-main__link nav-main__cta" href="#cta">Try for free</a>
 					</li>
 				</ul>
 			</nav>
+
+			<button class="mobile-navigation-button">
+				<ion-icon
+					class="mobile-navigation-button-icon"
+					name="menu-outline"
+				></ion-icon>
+				<ion-icon
+					class="mobile-navigation-button-icon"
+					name="close-outline"
+				></ion-icon>
+			</button>
 		</header>
 
 		<main>
 			<!-- ! SECTION HERO START -->
 			<section class="section-hero" id="hero">
-				<div class="hero-container grid grid--2-cols">
+				<div class="hero-container"> <!-- ? grid grid--2-cols -->
 					<div class="hero-text-box">
 						<h1 class="heading-primary">
 							A healthy meal delivered to your door, every single day
@@ -63,34 +92,42 @@
 							eat healthy again. Tailored to your personal tastes and
 							nutritional needs. We have delivered 250,000+ meals last year!
 						</p>
-						<a href="#" class="button button--full margin-right-small"
-							>Start eating well</a
-						>
-						<a href="#" class="button button--outline">Learn more &darr;</a>
+						<div class="hero-buttons">
+							<a href="#cta" class="button button--full "
+								>Start eating well</a
+							>
+							<a href="#how" class="button button--outline">Learn more &darr;</a>
+						</div>
 
 						<div class="meals-delivered">
 							<div class="meals-delivered__images">
 								<img
+									loading="lazy"
 									src="./images/customers/customer-1.jpg"
 									alt="Customer Photo"
 								/>
 								<img
+									loading="lazy"
 									src="./images/customers/customer-2.jpg"
 									alt="Customer Photo"
 								/>
 								<img
+									loading="lazy"
 									src="./images/customers/customer-3.jpg"
 									alt="Customer Photo"
 								/>
 								<img
+									loading="lazy"
 									src="./images/customers/customer-4.jpg"
 									alt="Customer Photo"
 								/>
 								<img
+									loading="lazy"
 									src="./images/customers/customer-5.jpg"
 									alt="Customer Photo"
 								/>
 								<img
+									loading="lazy"
 									src="./images/customers/customer-6.jpg"
 									alt="Customer Photo"
 								/>
@@ -103,6 +140,7 @@
 
 					<div class="hero-image-box">
 						<img
+							loading="lazy"
 							class="hero-image"
 							src="./images/hero.png"
 							alt="Woman enjoying food, meals in storage container, and food bowls on a table."
@@ -120,16 +158,21 @@
 
 					<div class="logos">
 						<img
-							src="./images/logos/business-insider.png"
-							alt="Business Insider Logo"
-						/>
-						<img src="./images/logos/forbes.png" alt="Forbes Logo" />
-						<img src="./images/logos/techcrunch.png" alt="Tech Crunch Logo" />
-						<img
+							loading="lazy"
 							src="./images/logos/the-new-york-times.png"
 							alt="The New York Times Logo"
 						/>
-						<img src="./images/logos/usa-today.png" alt="USA Today Logo" />
+						<img
+							loading="lazy" src="./images/logos/forbes.png" alt="Forbes Logo" />
+						<img
+							loading="lazy" src="./images/logos/techcrunch.png" alt="Tech Crunch Logo" />
+						<img
+							loading="lazy" src="./images/logos/usa-today.png" alt="USA Today Logo" />
+						<img
+							loading="lazy"
+							src="./images/logos/business-insider.png"
+							alt="Business Insider Logo"
+						/>
 					</div>
 				</div>
 			</section>
@@ -167,6 +210,7 @@
 					<!-- ? HOW IT WORKS STEP #1 IMAGE START -->
 					<div class="step-box-images">
 						<img
+							loading="lazy"
 							src="./images/app/app-screen-1.png"
 							alt="iPhone app preferences selection screen"
 							class="step-image"
@@ -179,6 +223,7 @@
 					<!-- ? HOW IT WORKS STEP #2 IMAGE START -->
 					<div class="step-box-images">
 						<img
+							loading="lazy"
 							src="./images/app/app-screen-2.png"
 							alt="iPhone app meals approving plan"
 							class="step-image"
@@ -215,6 +260,7 @@
 					<!-- ? HOW IT WORKS STEP #3 IMAGE START -->
 					<div class="step-box-images">
 						<img
+							loading="lazy"
 							src="./images/app/app-screen-3.png"
 							alt="iPhone app delivery screen"
 							class="step-image"
@@ -242,8 +288,9 @@
 					<!-- ! MEAL ITEM START -->
 					<div class="meal">
 						<!-- ! MEAL ITEM IMAGE START -->
-						<div class="meal-image">
+						<div class="meal__image-box">
 							<img
+								loading="lazy"
 								src="./images/meals/meal-1.jpg"
 								alt="Japanese Gyozas Image"
 								class="meal-image"
@@ -305,8 +352,9 @@
 					<!-- ! MEAL ITEM START -->
 					<div class="meal">
 						<!-- ! MEAL ITEM IMAGE START -->
-						<div class="meal-image">
+						<div class="meal__image-box">
 							<img
+								loading="lazy"
 								src="./images/meals/meal-2.jpg"
 								alt="Avocado Salad Image"
 								class="meal-image"
@@ -448,7 +496,7 @@
 				</div>
 
 				<div class="container center-text">
-					<a href="#" class="all-recipes-link">See all recipes &rarr;</a>
+					<a href="#" class="link meal-all-recipes">See all recipes &rarr;</a>
 				</div>
 			</section>
 			<!-- ! SECTION MEALS END -->
@@ -462,6 +510,7 @@
 						<!-- ! TESTIMONIAL ITEM START -->
 						<figure class="testimonial">
 							<img
+								loading="lazy"
 								src="./images/customers/dave.jpg"
 								alt="Dave Bryson Photo"
 								class="testimonial-image"
@@ -477,6 +526,7 @@
 						<!-- ! TESTIMONIAL ITEM START -->
 						<figure class="testimonial">
 							<img
+								loading="lazy"
 								src="./images/customers/ben.jpg"
 								alt="Ben Hadley Photo"
 								class="testimonial-image"
@@ -492,6 +542,7 @@
 						<!-- ! TESTIMONIAL ITEM START -->
 						<figure class="testimonial">
 							<img
+								loading="lazy"
 								src="./images/customers/steve.jpg"
 								alt="Steve Miller Photo"
 								class="testimonial-image"
@@ -507,6 +558,7 @@
 						<!-- ! TESTIMONIAL ITEM START -->
 						<figure class="testimonial">
 							<img
+								loading="lazy"
 								src="./images/customers/hannah.jpg"
 								alt="Hannah Smith Photo"
 								class="testimonial-image"
@@ -518,6 +570,38 @@
 							<p class="testimonial-name">&mdash; Hannah Smith</p>
 						</figure>
 						<!-- ! TESTIMONIAL ITEM END -->
+
+						<!-- ! TESTIMONIAL ITEM START -->
+						<figure class="testimonial">
+							<img
+								loading="lazy"
+								src="./images/customers/ben.jpg"
+								alt="Ben Hadley Photo"
+								class="testimonial-image"
+							/>
+							<blockquote class="testimonial-text">
+								The AI algorithm is crazy good, it chooses the right meals for
+								me every time. It's amazing not to worry about food anymore!
+							</blockquote>
+							<p class="testimonial-name">&mdash; Ben Hadley</p>
+						</figure>
+						<!-- ! TESTIMONIAL ITEM END -->
+
+						<!-- ! TESTIMONIAL ITEM START -->
+						<figure class="testimonial">
+							<img
+								loading="lazy"
+								src="./images/customers/dave.jpg"
+								alt="Dave Bryson Photo"
+								class="testimonial-image"
+							/>
+							<blockquote class="testimonial-text">
+								Inexpensive, healthy and great-tasting meals, without even
+								having to order manually! It feels truly magical.
+							</blockquote>
+							<p class="testimonial-name">&mdash; Dave Bryson</p>
+						</figure>
+						<!-- ! TESTIMONIAL ITEM END -->
 					</div>
 				</div>
 
@@ -525,72 +609,84 @@
 				<div class="gallery">
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-1.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-2.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-3.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-4.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-5.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-6.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-7.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-8.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-9.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-10.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-11.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
 					</figure>
 					<figure class="gallery-item">
 						<img
+							loading="lazy"
 							src="./images/gallery/gallery-12.jpg"
 							alt="Photo of beautifully arranged food"
 						/>
@@ -601,7 +697,7 @@
 			<!-- ! SECTION TESTIMONIALS END -->
 
 			<!-- ! SECTION PRICING START -->
-			<section class="section-pricing">
+			<section class="section-pricing" id="price">
 				<!-- ! SECTION PRICING TITLE START -->
 				<div class="container">
 					<span class="heading-sub">Pricing</span>
@@ -671,7 +767,7 @@
 
 						<!-- ! PRICING PLAN BUTTON START -->
 						<div class="pricing-plan__sign-up">
-							<a href="#" class="button button--full">Start eating well</a>
+							<a href="#cta" class="button button--full">Start eating well</a>
 						</div>
 						<!-- ! PRICING PLAN BUTTON END -->
 					</div>
@@ -733,7 +829,7 @@
 
 						<!-- ! PRICING PLAN BUTTON START -->
 						<div class="pricing-plan__sign-up">
-							<a href="#" class="button button--full">Start eating well</a>
+							<a href="#cta" class="button button--full">Start eating well</a>
 						</div>
 						<!-- ! PRICING PLAN BUTTON END -->
 					</div>
@@ -749,7 +845,7 @@
 					</aside>
 				</div>
 				<!-- ! SECTION PRICING BOTTOM INFORMATIVE TEXT END -->
-				
+
 				<!-- ! PRICING PLAN FEATURES BOX START -->
 				<div class="container grid grid--4-cols">
 					<!-- ! PRICING PLAN FEATURE START -->
@@ -804,123 +900,174 @@
 			<!-- ! SECTION PRICING END -->
 
 			<!-- ! SECTION CALL TO ACTION START -->
-			<section class="section-cta">
+			<section class="section-cta" id="cta">
 				<div class="container">
 					<div class="cta">
 						<div class="cta-box-text">
 							<h2 class="heading-secondary">Get your first meal for free!</h2>
+							<p class="cta-text">
+								Healthy, tasty and hassle-free meals are waiting for you. Start
+								eating well today. You can cancel or pause anytime. And the
+								first meal is on us!
+							</p>
+							<form action="#" class="cta-form">
+								<div>
+									<label for="fullName">Full Name</label>
+									<input
+									autocomplete="off"
+										id="fullName"
+										name="fullName"
+										type="text"
+										placeholder="John Smith"
+										required
+									/>
+								</div>
+
+								<div>
+									<label for="email">Email address</label>
+									<input
+									autocomplete="off"
+										id="email"
+										name="email"
+										type="email"
+										placeholder="me@example.com"
+										required
+									/>
+								</div>
+
+								<div>
+									<label for="fullName">Where did you hear from us?</label>
+									<select name="select-where" id="select-where">
+										<option value="">Please choose one option:</option>
+										<option value="friends">Friends and family</option>
+										<option value="youtube">Youtube video</option>
+										<option value="podcast">Podcast</option>
+										<option value="ad">Facebook ad</option>
+										<option value="others">Others</option>
+									</select>
+								</div>
+
+								<button type="submit" class="button button--form">Sign up now</buttonb>
+							</form>
 						</div>
-						<div class="cta-box-image">
-							<img src="./images/eating.jpg" alt="Woman enjoying food">
+
+						<div
+							class="cta-box-image"
+							role="img"
+							aria-label="Woman enjoying food"
+						>
+							<!-- <img
+									loading="lazy" src="./images/eating.jpg" alt="Woman enjoying food" /> -->
 						</div>
 					</div>
 				</div>
 			</section>
 			<!-- ! SECTION CALL TO ACTION END -->
-
-			<!-- ! FOOTER SECTION START -->
-			<footer class="footer" id="footer">
-				<div class="container grid grid--footer">
-					<!-- ! FOOTER COLUMN START -->
-					<div class="footer__column--logo">
-						<a href="#" class="footer-logo"
-							><img src="./images/omnifood-logo.png" alt="Omnifood Logo"
-						/></a>
-						<ul class="footer-links">
-							<li>
-								<a href="#" class="footer-links-item"
-									><ion-icon
-										class="footer-links-item-icon"
-										name="logo-instagram"
-									></ion-icon
-								></a>
-							</li>
-							<li>
-								<a href="#" class="footer-links-item"
-									><ion-icon
-										class="footer-links-item-icon"
-										name="logo-facebook"
-									></ion-icon
-								></a>
-							</li>
-							<li>
-								<a href="#" class="footer-links-item"
-									><ion-icon
-										class="footer-links-item-icon"
-										name="logo-twitter"
-									></ion-icon
-								></a>
-							</li>
-						</ul>
-						<p class="footer-copyright">
-							Copyright &copy; 2021 by Omnifood, Inc. All rights reserved.
-						</p>
-					</div>
-					<!-- ! FOOTER COLUMN END -->
-
-					<!-- ! FOOTER COLUMN START -->
-					<div class="footer__column--address">
-						<p class="heading-footer">Contact Us</p>
-						<address class="contacts">
-							<p class="address">
-								623 Harrison St., 2nd Floor, San Francisco, CA 94107
-							</p>
-							<p>
-								<a href="tel:+905306619958" class="footer-links-item"
-									>+90 530 661 9958</a
-								>
-								<br />
-								<a
-									href="mailto:onurierdogan@hotmail.com"
-									class="footer-links-item"
-									>onurierdogan@hotmail.com
-								</a>
-							</p>
-						</address>
-					</div>
-					<!-- ! FOOTER COLUMN END -->
-
-					<!-- ! FOOTER COLUMN START -->
-					<div class="footer__column--navigation">
-						<p class="heading-footer">Account</p>
-						<ul class="nav-footer">
-							<li><a href="#" class="footer-links-item">Create account</a></li>
-							<li><a href="#" class="footer-links-item">Sign in</a></li>
-							<li><a href="#" class="footer-links-item">IOS app</a></li>
-							<li><a href="#" class="footer-links-item">Android app</a></li>
-						</ul>
-					</div>
-					<!-- ! FOOTER COLUMN END -->
-
-					<!-- ! FOOTER COLUMN START -->
-					<div class="footer__column--navigation">
-						<p class="heading-footer">Company</p>
-						<ul class="nav-footer">
-							<li><a href="#" class="footer-links-item">About Omnifood</a></li>
-							<li><a href="#" class="footer-links-item">For Business</a></li>
-							<li>
-								<a href="#" class="footer-links-item">Cooking partners</a>
-							</li>
-							<li><a href="#" class="footer-links-item">Careers</a></li>
-						</ul>
-					</div>
-					<!-- ! FOOTER COLUMN END -->
-
-					<!-- ! FOOTER COLUMN START -->
-					<div class="footer__column--navigation">
-						<p class="heading-footer">Resources</p>
-						<ul class="nav-footer">
-							<li>
-								<a href="#" class="footer-links-item">Recipe directory</a>
-							</li>
-							<li><a href="#" class="footer-links-item">Help center</a></li>
-							<li><a href="#" class="footer-links-item">Privacy & terms</a></li>
-						</ul>
-					</div>
-					<!-- ! FOOTER COLUMN END -->
-				</div>
-			</footer>
-			<!-- ! FOOTER SECTION END -->
 		</main>
+		<!-- ! FOOTER SECTION START -->
+		<footer class="footer" id="footer">
+			<div class="container grid grid--footer">
+				<!-- ! FOOTER COLUMN START -->
+				<div class="footer__column--logo">
+					<a href="#" class="footer-logo"
+						><img
+							loading="lazy" src="./images/omnifood-logo.png" alt="Omnifood Logo"
+					/></a>
+					<ul class="footer-links">
+						<li>
+							<a href="#" class="footer-links-item"
+								><ion-icon
+									class="footer-links-item-icon"
+									name="logo-instagram"
+								></ion-icon
+							></a>
+						</li>
+						<li>
+							<a href="#" class="footer-links-item"
+								><ion-icon
+									class="footer-links-item-icon"
+									name="logo-facebook"
+								></ion-icon
+							></a>
+						</li>
+						<li>
+							<a href="#" class="footer-links-item"
+								><ion-icon
+									class="footer-links-item-icon"
+									name="logo-twitter"
+								></ion-icon
+							></a>
+						</li>
+					</ul>
+					<p class="footer-copyright">
+						Copyright &copy; <span class="year"></span> by Omnifood, Inc. All
+						rights reserved.
+					</p>
+				</div>
+				<!-- ! FOOTER COLUMN END -->
+
+				<!-- ! FOOTER COLUMN START -->
+				<div class="footer__column--address">
+					<p class="heading-footer">Contact Us</p>
+					<address class="contacts">
+						<p class="address">
+							623 Harrison St., 2nd Floor, San Francisco, CA 94107
+						</p>
+						<p>
+							<a href="tel:+905306619958" class="footer-links-item"
+								>+90 530 661 9958</a
+							>
+							<br />
+							<a
+								href="mailto:onurierdogan@hotmail.com"
+								class="footer-links-item"
+								>onurierdogan@hotmail.com
+							</a>
+						</p>
+					</address>
+				</div>
+				<!-- ! FOOTER COLUMN END -->
+
+				<!-- ! FOOTER COLUMN START -->
+				<div class="footer__column--navigation">
+					<p class="heading-footer">Account</p>
+					<ul class="nav-footer">
+						<li><a href="#" class="footer-links-item">Create account</a></li>
+						<li><a href="#" class="footer-links-item">Sign in</a></li>
+						<li><a href="#" class="footer-links-item">IOS app</a></li>
+						<li><a href="#" class="footer-links-item">Android app</a></li>
+					</ul>
+				</div>
+				<!-- ! FOOTER COLUMN END -->
+
+				<!-- ! FOOTER COLUMN START -->
+				<div class="footer__column--navigation">
+					<p class="heading-footer">Company</p>
+					<ul class="nav-footer">
+						<li><a href="#" class="footer-links-item">About Omnifood</a></li>
+						<li><a href="#" class="footer-links-item">For Business</a></li>
+						<li>
+							<a href="#" class="footer-links-item">Cooking partners</a>
+						</li>
+						<li><a href="#" class="footer-links-item">Careers</a></li>
+					</ul>
+				</div>
+				<!-- ! FOOTER COLUMN END -->
+
+				<!-- ! FOOTER COLUMN START -->
+				<div class="footer__column--navigation">
+					<p class="heading-footer">Resources</p>
+					<ul class="nav-footer">
+						<li>
+							<a href="#" class="footer-links-item">Recipe directory</a>
+						</li>
+						<li><a href="#" class="footer-links-item">Help center</a></li>
+						<li><a href="#" class="footer-links-item">Privacy & terms</a></li>
+					</ul>
+				</div>
+				<!-- ! FOOTER COLUMN END -->
+			</div>
+		</footer>
+		<!-- ! FOOTER SECTION END -->
 	</body>
 </html>
